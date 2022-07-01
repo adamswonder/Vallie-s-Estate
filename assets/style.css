@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+.logo {
+
+    font-family: 'Oleo Script', cursive;
+    font-size: 30px;
+    font-weight: 400;
+}
+body {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+
+}
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+}
+li {
+    list-style: none;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px;
+    background-color: #fafafa;
+    color: black;
+}
+.nav-links a {
+    color: #fff;
+}
+.menu {
+    display: flex;
+    gap: 1em; /*sets gutters between rows and columns*/ 
+    font-size: 20px;
+    justify-content: space-around;
+}
+.menu li {
+    padding: 5px 14px;
+}
+.active, .navbar {
+    color: #0F298B;
+    font-weight: bold;
+}
+.navbar .button {
+    background-color:#2549D3;
+    border-radius: 10px;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 700;
+    margin: 4px 2px;
+}
+.navbar .button:hover {
+    box-shadow: 0 5px 15px #0F298B;
+}
+/* For responsive navigation barr */
+input[type=checkbox]{
+    display: none;
+}
+.hamburger {
+    display: none;
+    font-size: 20px;
+    user-select: none;
+}
+/* Media device Query */
+@media (max-width: 768px) {
+    .menu { 
+     display:none;
+     position: absolute;
+     right: 0;
+     left: 0;
+     text-align: center;
+     padding: 16px 0;
+    }
+
+    input[type=checkbox]:checked ~ .menu{
+        display: block;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
+.header {
+    border-top: 15px;
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+}
+.h1, .header {
+    font-size: 30px;
+    color: #0F298B;
+    font-weight: 400;
+}
+#heading3{
+    font-size: 30px;
+    color: black;
+    font-weight: 400;
+}
+
+}
+.button {
+    background-color:#2549D3;
+    border-radius: 10px;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 700;
+    margin: 4px 30px;
+}
+.container {
+    display: flex;
+    margin-top: 4%;
+    margin-right: 5%;
+    padding-left: 12%;
+    padding-right: 10%;
+}
