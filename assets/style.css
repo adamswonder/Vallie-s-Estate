@@ -46,6 +46,7 @@ li {
     justify-content: space-around;
 }
 .menu li {
+    
     padding: 5px 14px;
 }
 .active, .navbar {
@@ -295,4 +296,35 @@ input[type=checkbox]{
     }
   
   }
- 
+  /* Gallery Section */
+  div.gallery {
+    margin: 5px;
+    border: 1px;
+    float: left;
+    width: auto;
+    height: fit-content;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.description {
+    padding: 15px;
+    text-align: left;
+  }
+  .description .lst {
+    color: #0F298B;
+  }
+  .g-container {
+    display: flex;
+    margin-top: 4%;
+    margin-right: 0;
+    padding-left: 12%;
+    padding-right: 10%;
+}
