@@ -127,7 +127,7 @@ input[type=checkbox]{
 .container {
     display: flex;
     margin-top: 4%;
-    margin-right: 5%;
+    margin-right: 0;
     padding-left: 12%;
     padding-right: 10%;
 }
@@ -217,5 +217,82 @@ input[type=checkbox]{
   .card-main {
     background: #fafafa;
     color: black;
+  }
+  /* Footer */
+  footer {
+    padding-top: 5%;
+    background-color: #0F298B;
+    color: #fafafa;
+    font-size: 20px;
+  }
+  footer * {
+    font-family: 'Space Grotesk', sans-serif;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+  }
+  .row {
+    padding: 1em 1em;
+  }
+  .row.primary {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 2fr;
+    align-items: center;
+  }
+  .column {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 2em;
+    min-height: 15em;
+  }
+  .footer h3 {
+    width: 100%;
+    text-align: left;
+    color: white;
+    font-size: 1.4em;
+    white-space: nowrap;
+  }
+  ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+  li:not(:first-child) {
+    margin-top: 0.8em;
+  }
+  ul li a {
+    color: #fafafa;
+    text-decoration: none;
+  }
+  ul li a:hover {
+    color: #2a8ded;
+  }
+  .about p {
+    text-align: left;
+    line-height: 2;
+    margin: 0;
+  }
+  .footer-menu{
+    float: left;
+      margin-top: 10px;
+  }
+  
+  .footer-menu a{
+    color: #fafafa;
+    padding: 6px;
+  
+    text-decoration: none;
+  }
+  .footer-menu a:hover{
+    color: #fafafa;
+  }
+  @media screen and (max-width: 850px) {
+    .row.primary {
+      grid-template-columns: 1fr;
+    }
+  
   }
  
